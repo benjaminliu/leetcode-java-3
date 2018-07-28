@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Created by ben on 2018/5/19.
  */
-public class E_1_TwoSum {
+public class Q1_E_TwoSum {
     public int[] twoSum(int[] nums, int target) {
         int[] res = new int[2];
         if (null == nums || nums.length < 2)
@@ -33,7 +33,7 @@ public class E_1_TwoSum {
 
     public static void main(String[] args) {
         int[] arr = {3, 2, 4};
-        E_1_TwoSum twoSum = new E_1_TwoSum();
+        Q1_E_TwoSum twoSum = new Q1_E_TwoSum();
         int[] res = twoSum.twoSum(arr, 6);
         System.out.println(Arrays.toString(res));
     }

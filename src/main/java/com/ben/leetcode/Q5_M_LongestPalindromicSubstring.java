@@ -3,7 +3,7 @@ package com.ben.leetcode;
 /**
  * Created by ben on 2018/5/19.
  */
-public class M_5_LongestPalindromicSubstring {
+public class Q5_M_LongestPalindromicSubstring {
     private int max;
     private int lower;
 

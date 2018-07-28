@@ -6,7 +6,7 @@ import com.ben.leetcode.common.ListNode;
 /**
  * Created by ben on 2018/5/19.
  */
-public class M_2_AddTwoNumbers {
+public class Q2_M_AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (null == l1)
             return l2;
@@ -72,7 +72,7 @@ public class M_2_AddTwoNumbers {
     }
 
     public static void main(String[] args) {
-        M_2_AddTwoNumbers q = new M_2_AddTwoNumbers();
+        Q2_M_AddTwoNumbers q = new Q2_M_AddTwoNumbers();
         ListNode l2 = new ListNode(9);
         l2.next = new ListNode(9);
         ListNode head = q.addTwoNumbers(new ListNode(1), l2);

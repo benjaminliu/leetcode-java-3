@@ -3,7 +3,7 @@ package com.ben.leetcode;
 /**
  * Created by ben on 2018/5/20.
  */
-public class E_9_PalindromeNumber {
+public class Q9_E_PalindromeNumber {
     public boolean isPalindrome(int x) {
         if(x < 0)
             return false;

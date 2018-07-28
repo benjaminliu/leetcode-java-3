@@ -1,14 +1,12 @@
 package com.ben.leetcode;
 
-import jdk.nashorn.internal.objects.NativeUint16Array;
-
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by ben on 2018/5/19.
  */
-public class M_3_LongestSubstringWithoutRepeatingCharacters {
+public class Q3_M_LongestSubstringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0)
             return 0;
@@ -45,7 +43,7 @@ public class M_3_LongestSubstringWithoutRepeatingCharacters {
 
     public static void main(String[] args) {
         String s = "abcabcbb";
-        M_3_LongestSubstringWithoutRepeatingCharacters q = new M_3_LongestSubstringWithoutRepeatingCharacters();
+        Q3_M_LongestSubstringWithoutRepeatingCharacters q = new Q3_M_LongestSubstringWithoutRepeatingCharacters();
         int res = q.lengthOfLongestSubstring(s);
 
         System.out.print(res);

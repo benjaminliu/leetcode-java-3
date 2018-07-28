@@ -3,7 +3,7 @@ package com.ben.leetcode;
 /**
  * Created by ben on 2018/5/20.
  */
-public class E_7_ReverseInteger {
+public class Q7_E_ReverseInteger {
     public int reverse(int x) {
         if (x == 0)
             return 0;

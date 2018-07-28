@@ -3,7 +3,7 @@ package com.ben.leetcode;
 /**
  * Created by ben on 2018/5/20.
  */
-public class M_8_StringToInteger {
+public class Q8_M_StringToInteger {
     public int myAtoi(String str) {
         if (str == null || str.length() == 0)
             return 0;
@@ -70,7 +70,7 @@ public class M_8_StringToInteger {
 
     public static void main(String[] args) {
         String s = "42";
-        M_8_StringToInteger q = new M_8_StringToInteger();
+        Q8_M_StringToInteger q = new Q8_M_StringToInteger();
         int i = q.myAtoi(s);
         System.out.print(i);
     }
