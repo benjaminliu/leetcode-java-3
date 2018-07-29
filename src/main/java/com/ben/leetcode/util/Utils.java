@@ -1,18 +1,37 @@
 package com.ben.leetcode.util;
 
+import com.ben.leetcode.common.ListNode;
+
 import java.util.List;
 
 /**
  * Created by ben on 2018/7/28.
  */
 public class Utils {
+
+    public static <T> void print(T item) {
+        if (item == null)
+            return;
+        System.out.print(item);
+        System.out.print(" , ");
+    }
+
+    public static void println() {
+        System.out.println();
+    }
+
+    public static <T> void println(T item) {
+        if (item == null)
+            return;
+        System.out.println(item);
+    }
+
     public static <T> void printList(List<T> list) {
         if (list == null)
             return;
 
         for (T item : list) {
-            System.out.print(item);
-            System.out.print(" , ");
+            print(item);
         }
     }
 
@@ -22,7 +41,14 @@ public class Utils {
 
         for (List<T> group : list) {
             printList(group);
-            System.out.println();
+            println();
+        }
+    }
+
+    public static void printListNode(ListNode head) {
+        while (head != null) {
+            print(head.val);
+            head = head.next;
         }
     }
 }
