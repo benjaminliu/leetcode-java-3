@@ -26,6 +26,14 @@ public class Utils {
         System.out.println(item);
     }
 
+    public static void printArray(int[] array) {
+        if (array == null)
+            return;
+        for (int i = 0, len = array.length; i < len; i++) {
+            print(array[i]);
+        }
+    }
+
     public static <T> void printList(List<T> list) {
         if (list == null)
             return;
