@@ -32,6 +32,7 @@ public class Utils {
         for (int i = 0, len = array.length; i < len; i++) {
             print(array[i]);
         }
+        println();
     }
 
     public static <T> void printList(List<T> list) {
