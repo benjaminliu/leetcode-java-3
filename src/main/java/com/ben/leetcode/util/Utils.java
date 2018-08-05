@@ -16,6 +16,10 @@ public class Utils {
         System.out.print(" , ");
     }
 
+    public static void printSpace() {
+        System.out.print(" ");
+    }
+
     public static void println() {
         System.out.println();
     }
@@ -33,6 +37,18 @@ public class Utils {
             print(array[i]);
         }
         println();
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        int row = matrix.length;
+        int col = matrix[0].length;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                print(matrix[i][j]);
+                printSpace();
+            }
+            println();
+        }
     }
 
     public static <T> void printList(List<T> list) {
