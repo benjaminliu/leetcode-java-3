@@ -27,7 +27,7 @@ public class Q61_M_Rotate_List {
 
         return dummy.next;
     }
-    
+
     public ListNode rotateRight1(ListNode head, int k) {
         if (head == null || head.next == null)
             return head;
