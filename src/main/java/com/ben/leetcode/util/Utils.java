@@ -75,5 +75,6 @@ public class Utils {
             print(head.val);
             head = head.next;
         }
+        println();
     }
 }
