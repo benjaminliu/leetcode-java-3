@@ -1,7 +1,10 @@
 package com.ben.leetcode.util;
 
 import com.ben.leetcode.common.ListNode;
+import com.ben.leetcode.common.TreeNode;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -76,5 +79,35 @@ public class Utils {
             head = head.next;
         }
         println();
+    }
+
+    public static void printTreeNodeList(List<TreeNode> roots) {
+        if (roots == null)
+            return;
+        for (TreeNode node : roots) {
+            printTreeNode(node);
+            println();
+        }
+    }
+
+    public static void printTreeNode(TreeNode root) {
+        if (root == null)
+            return;
+
+        Deque<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode cur = queue.pollFirst();
+
+            print(cur.val);
+            if (cur.left != null)
+                queue.addLast(cur.left);
+            else
+                print("null");
+            if (cur.right != null)
+                queue.addLast(cur.right);
+            else
+                print("null");
+        }
     }
 }
