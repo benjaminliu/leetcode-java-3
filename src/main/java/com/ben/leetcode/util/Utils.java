@@ -61,6 +61,8 @@ public class Utils {
         for (T item : list) {
             print(item);
         }
+
+        println();
     }
 
     public static <T> void printListOfList(List<List<T>> list) {
@@ -86,7 +88,6 @@ public class Utils {
             return;
         for (TreeNode node : roots) {
             printTreeNode(node);
-            println();
         }
     }
 
@@ -109,5 +110,7 @@ public class Utils {
             else
                 print("null");
         }
+
+        println();
     }
 }

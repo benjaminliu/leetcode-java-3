@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by ben on 2018/8/19.
  */
-public class Q101_M_Binary_Tree_Level_Order_Traversal {
+public class Q102_M_Binary_Tree_Level_Order_Traversal {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null)
