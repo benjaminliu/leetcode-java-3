@@ -100,15 +100,20 @@ public class Utils {
         while (!queue.isEmpty()) {
             TreeNode cur = queue.pollFirst();
 
-            print(cur.val);
-            if (cur.left != null)
-                queue.addLast(cur.left);
-            else
+            if (cur.val == Integer.MIN_VALUE) {
                 print("null");
-            if (cur.right != null)
-                queue.addLast(cur.right);
-            else
-                print("null");
+            } else {
+                print(cur.val);
+                if (cur.left != null)
+                    queue.addLast(cur.left);
+                else
+                    queue.addLast(new TreeNode(Integer.MIN_VALUE));
+
+                if (cur.right != null)
+                    queue.addLast(cur.right);
+                else
+                    queue.addLast(new TreeNode(Integer.MIN_VALUE));
+            }
         }
 
         println();
