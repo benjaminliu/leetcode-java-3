@@ -54,6 +54,18 @@ public class Utils {
         }
     }
 
+    public static void printMatrix(char[][] matrix) {
+        int row = matrix.length;
+        int col = matrix[0].length;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                print(matrix[i][j]);
+                printSpace();
+            }
+            println();
+        }
+    }
+
     public static <T> void printList(List<T> list) {
         if (list == null)
             return;
