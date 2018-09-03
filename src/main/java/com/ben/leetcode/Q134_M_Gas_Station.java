@@ -3,7 +3,7 @@ package com.ben.leetcode;
 /**
  * Created by ben on 2018/9/2.
  */
-public class Q124_M_Gas_Station {
+public class Q134_M_Gas_Station {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         if (gas.length == 0)
             return -1;
